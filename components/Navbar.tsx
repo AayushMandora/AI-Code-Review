@@ -9,10 +9,10 @@ export default function Navbar() {
     const { data: session } = useSession()
 
     return (
-        <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/60 backdrop-blur-xl font-sans">
-            <div className="flex h-16 items-center justify-between px-8 max-w-7xl mx-auto">
+        <nav className="sticky top-0 z-50 w-full border-b border-border bg-background/60 backdrop-blur-xl font-sans p-2">
+            <div className="flex h-16 items-center justify-between px-8 max-w-7xl mx-auto m-4">
                 <div className="flex items-center gap-6">
-                    <Link href="/dashboard" className="flex items-center gap-2 group transition-all">
+                    <Link href="/dashboard" className="flex items-center gap-3 group transition-all">
                         <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-primary to-blue-600 flex items-center justify-center group-hover:scale-110 transition-transform">
                             <Code2 className="text-white w-5 h-5" />
                         </div>
